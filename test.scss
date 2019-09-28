@@ -1,0 +1,63 @@
+@import './settings';
+@import './functions';
+@import './mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    @include make-vars();
+}
+
+h2 {
+    margin: 0;
+}
+
+.thangs {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(#000, .15);
+    padding: 2rem;
+}
+
+.card-header {
+    display: flex;
+}
+
+.card-title {
+    flex: 1 0 auto;
+}
+
+.thangs {
+    .card {
+        flex: 1 1 100%;
+        margin-bottom: 2%;
+
+        @include breakpoint-up(sm) {
+            flex: 1 1 30%;
+            max-width: 30%;
+
+            &:nth-child(3n),
+            &:nth-child(3n - 1) {
+                margin-right: 2%;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.card-alert {
+    background: get-color('alert');
+    color: #fff;
+}

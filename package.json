@@ -1,0 +1,25 @@
+{
+  "name": "scss-tools",
+  "version": "1.0.0",
+  "description": "Simple SCSS tooling",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "scss": "node-sass --watch test.scss -o ./test.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkb24/scss-tools.git"
+  },
+  "author": "bkb24",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkb24/scss-tools/issues"
+  },
+  "homepage": "https://github.com/bkb24/scss-tools#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

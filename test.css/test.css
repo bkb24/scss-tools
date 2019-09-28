@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box; }
+
+:root {
+  --color-dark: #242424;
+  --color-alert: #d41e21;
+  --breakpoint-xxs: 320px;
+  --breakpoint-xs: 568px;
+  --breakpoint-sm: 768px;
+  --breakpoint-m: 1025px;
+  --breakpoint-l: 1200px;
+  --breakpoint-xl: 1920px; }
+
+h2 {
+  margin: 0; }
+
+.thangs {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative; }
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 2rem; }
+
+.card-header {
+  display: flex; }
+
+.card-title {
+  flex: 1 0 auto; }
+
+.thangs .card {
+  flex: 1 1 100%;
+  margin-bottom: 2%; }
+  @media (min-width: 768px) {
+    .thangs .card {
+      flex: 1 1 30%;
+      max-width: 30%; }
+      .thangs .card:nth-child(3n), .thangs .card:nth-child(3n - 1) {
+        margin-right: 2%; }
+      .thangs .card:last-child {
+        margin-right: 0; } }
+
+.card-alert {
+  background: #d41e21;
+  color: #fff; }

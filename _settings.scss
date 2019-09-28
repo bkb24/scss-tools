@@ -1,0 +1,17 @@
+$color-dark: #242424;
+$color-alert: #d41e21;
+
+$vars: (
+    color: (
+        dark:   $color-dark,
+        alert:  $color-alert
+    ),
+    breakpoint: (
+        xxs: 320px,
+        xs: 568px,
+        sm: 768px,
+        m: 1025px,
+        l: 1200px,
+        xl: 1920px
+    )
+);
